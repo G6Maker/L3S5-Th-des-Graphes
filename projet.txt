@@ -1,0 +1,38 @@
+Java:
+
+voisin: sont les voisins sortant donc accessible.
+Fleche partant de ce sommet et pointant vers le voisin
+
+Follower: sont les voisins entrant donc non accessible.
+fleche arrivant nous et venant de follower
+
+la fonction remove de maniere sur et add moins sur crée des AssertionError a gogo !!!
+	peut etre fix en retirant les assertionError mais en ajoutant un condition dans la fonction qui demande les arcs !!!!! mais pas bonne solution car on a les voisin entrant et sortant !!! !!
+	
+dans la methode wListAdja() supprimer le system.Out
+	
+
+PageRank: renvoie ???
+	PR une map key est de type sommet et value de type int
+	v est un ensemble de sommet, getSommet();
+	|v| est un int = nbArc();
+	d+(v) est int = nbVoisin(); //peut etre inversé
+	d-(v) est int = nbFollower(); //peut etre inversé
+	N-(v) est un ensemble de sommet, getVoisin.
+	N+(v) est un ensemble de sommet, getFollower.
+	i <= 100 car a un moment on tourne en rond si pas assez de sommets.
+	
+
+	
+	
+shortest:
+	dist est une map où key est de type sommet et value de type int
+	P List = getSommets()
+	alt est int
+	
+	
+	
+POUR MODIFICATION:
+	Ajouter une surcharge de methode sortednom qui renvoie une list<Sommet>
+	Ajouter une surcharge de methode getAllArc() qui renvoie la string des arcs, reprendre dans la fonction listAdja()
+	Lors d'un ajout faire Assertion 2 sommets on 2 nom differents
